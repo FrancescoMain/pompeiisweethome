@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pompeii Sweet Home — B&B</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+            background: #1a1a1a;
+            color: #f5f0eb;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(139, 90, 43, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(166, 124, 82, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(100, 60, 20, 0.1) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+        }
+
+        .ornament {
+            font-size: 1.5rem;
+            letter-spacing: 0.8rem;
+            color: rgba(196, 164, 120, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.4rem, 6vw, 3.8rem);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            font-style: italic;
+            color: rgba(196, 164, 120, 0.8);
+            margin-bottom: 3rem;
+        }
+
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(196, 164, 120, 0.6), transparent);
+            margin: 0 auto 2.5rem;
+        }
+
+        .status {
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: rgba(196, 164, 120, 0.7);
+            margin-bottom: 3rem;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .contact a {
+            color: #f5f0eb;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            transition: color 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .contact a:hover {
+            color: #c4a478;
+        }
+
+        .contact .icon {
+            font-size: 1.1rem;
+            opacity: 0.7;
+        }
+
+        .label {
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(196, 164, 120, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .bottom-ornament {
+            margin-top: 3.5rem;
+            font-size: 1.5rem;
+            letter-spacing: 0.8rem;
+            color: rgba(196, 164, 120, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ornament">&#10022; &#10022; &#10022;</div>
+
+        <h1>Pompeii Sweet Home</h1>
+        <p class="tagline">Bed & Breakfast</p>
+
+        <div class="divider"></div>
+
+        <p class="status">Sito in costruzione &mdash; Coming Soon</p>
+
+        <p class="label">Info & Booking</p>
+
+        <div class="contact">
+            <a href="tel:+393494298547">
+                <span class="icon">&#9742;</span>
+                +39 349 429 8547
+            </a>
+            <a href="mailto:webkorsvagen@gmail.com">
+                <span class="icon">&#9993;</span>
+                webkorsvagen@gmail.com
+            </a>
+        </div>
+
+        <div class="bottom-ornament">&#10022; &#10022; &#10022;</div>
+    </div>
+</body>
+</html>
